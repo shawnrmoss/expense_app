@@ -42,7 +42,8 @@ class MyHomePage extends StatelessWidget {
             child: Container(
               color: Colors.blue,
               width: double.infinity,
-              child: Text('Chart'),
+              height: 100,
+              child: Center(child: Text('Chart')),
             ),
             elevation: 5,
           ),
@@ -52,7 +53,21 @@ class MyHomePage extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Container(
-                      child: Text(tx.amount.toString()),
+                      margin: EdgeInsets.symmetric(
+                        vertical: 20,
+                        horizontal: 20,
+                      ),
+                      child: Text(
+                        tx.amount.toString(),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.purple,
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.purple, width: 2),
+                      ),
                     ),
                     Column(
                       children: <Widget>[
