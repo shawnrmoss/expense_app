@@ -1,9 +1,5 @@
+import 'package:expense_app/widgets/user_transations.dart';
 import 'package:flutter/material.dart';
-
-import './widgets/transaction_list.dart';
-import './widgets//new_transaction.dart';
-
-import './models/transaction.dart';
 
 void main() => runApp(ExpenseApp());
 
@@ -18,20 +14,7 @@ class ExpenseApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  final List<Transaction> transactions = [
-    Transaction(
-      id: '1',
-      title: 'New Shoes',
-      amount: 69.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: '2',
-      title: 'Weekly Groceries',
-      amount: 16.26,
-      date: DateTime.now(),
-    )
-  ];
+  
   String titleInput;
   String amountInput;
 
@@ -44,15 +27,15 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Card(
-            child: Container(
+          Container(
+            width: double.infinity,
+            child: Card(
               color: Colors.blue,
-              width: double.infinity,
-              child: Center(child: Text('Chart')),
+              child: Text('CHART!'),
+              elevation: 5,
             ),
-            elevation: 5,
           ),
-          
+          UserTransations()
         ],
       ),
     );
