@@ -4,12 +4,12 @@ import 'package:intl/intl.dart';
 import '../models/transaction.dart';
 
 class TransactionList extends StatelessWidget {
-  final List<Transaction> transactions; 
+  final List<Transaction> transactions;
 
   TransactionList(this.transactions);
 
   @override
-  Widget build(BuildContext context) {    
+  Widget build(BuildContext context) {
     return Container(
       height: 300,
       child: ListView.builder(
@@ -28,11 +28,12 @@ class TransactionList extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
-                      color: Colors.purple,
+                      color: Theme.of(context).primaryColor,
                     ),
                   ),
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.purple, width: 2),
+                    border: Border.all(
+                        color: Theme.of(context).primaryColor, width: 2),
                   ),
                 ),
                 Column(
@@ -53,13 +54,10 @@ class TransactionList extends StatelessWidget {
                 )
               ],
             ),
-          ); 
+          );
         },
         itemCount: transactions.length,
       ),
     );
   }
 }
-
-
- 
