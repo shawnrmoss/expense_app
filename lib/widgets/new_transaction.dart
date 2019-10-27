@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class NewTransation extends StatelessWidget {
+class NewTransaction extends StatelessWidget {
   final Function addTx;
   final titleController = TextEditingController();
   final amountController = TextEditingController();
 
-  NewTransation(this.addTx);
+  NewTransaction(this.addTx);
 
   void submitTransation() {
 
