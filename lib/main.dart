@@ -7,9 +7,9 @@ import 'widgets/new_transaction.dart';
 import 'widgets/transaction_list.dart';
 
 void main() {
-  SystemChrome.setPreferredOrientations(
-    [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown],
-  );
+  // SystemChrome.setPreferredOrientations(
+  //   [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown],
+  // );
   runApp(ExpenseApp());
 }
 
@@ -150,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: (MediaQuery.of(context).size.height -
                             appBar.preferredSize.height -
                             MediaQuery.of(context).padding.top) *
-                        0.3)
+                        0.7)
                 : Container(
                     child:
                         TransactionList(_userTransactions, _deleteTransaction),
