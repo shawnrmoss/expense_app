@@ -2,5 +2,8 @@
 
 My first flutter app
 
-![](assets/images/expenseapp01.png)
+<img src="assets/images/expenseapp01.PNG" width="150" />
+<img src="assets/images/expenseapp02.PNG" width="150" />
+<img src="assets/images/expenseapp03.PNG" width="150" />
+
 
