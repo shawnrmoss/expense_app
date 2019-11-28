@@ -2,4 +2,4 @@
 
 My first flutter app
 
-![1](https://github.com/shawnrmoss/expense_app/tree/master/assets/images/expenseapp01.png)
+![Expense app 1](assets/images/expenseapp01.png?raw=true "No items")
