@@ -2,4 +2,6 @@
 
 My first flutter app
 
-![Expense app 1](https://github.com/shawnrmoss/expense_app/blob/master/assets/images/expenseapp01.png?raw=true "No items")
+![NoItems](expenseapp01.png "No items")
+![Flyout](expenseapp02.png "Flyout")
+![Items](expenseapp03.png "Items")
